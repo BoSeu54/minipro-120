@@ -28,7 +28,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _screenList[_selectedIndex],
-      backgroundColor: Color.fromRGBO(11, 12, 54, 1),
+      backgroundColor: Color.fromARGB(255, 218, 218, 255),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -36,8 +36,8 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
             label: 'Crypto',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.flutter_dash_rounded),
-            label: 'Flutter Dash',
+            icon: Icon(Icons.account_balance_wallet),
+            label: 'Wallets',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),

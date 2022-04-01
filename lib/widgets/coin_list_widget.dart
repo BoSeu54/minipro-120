@@ -6,6 +6,7 @@ import 'package:coin_base_clone/widgets/coin_logo_widget.dart';
 import 'package:coin_base_clone/widgets/widgets.dart';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CoinListWidget extends StatelessWidget {
   final List<DataModel> coins;
@@ -19,18 +20,18 @@ class CoinListWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Padding(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
-            child: Text(
-              "Crypto Currency",
-              style: Theme.of(context).textTheme.headline5,
-            ),
+            padding: const EdgeInsets.only(top: 15),
+            child: Text("Crypto Currency",
+                style: GoogleFonts.alef(
+                    fontSize: 27,
+                    fontWeight: FontWeight.w600,
+                    color: Color.fromARGB(255, 49, 35, 69))),
           ),
           const SizedBox(
-            height: 8.0,
+            height: 5.0,
           ),
           Expanded(
             child: ListView.builder(
